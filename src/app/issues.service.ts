@@ -12,4 +12,10 @@ export class IssuesService {
   getPendingIssues(): Issue[]{
     return this.issues.filter(_ => !_.completed)
   }
+
+  //TODO: generate random numbers issue
+  createIssue(issue: Issue){
+    issue.issueNumber = this.issues.length + 1
+    this.issues.push(issue)
+  }
 }

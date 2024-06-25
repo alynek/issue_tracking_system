@@ -7,7 +7,6 @@ import {IssuesService} from '../issues.service'
   templateUrl: './issue-list.component.html',
   styleUrls: ['./issue-list.component.css']
 })
-
 export class IssueListComponent implements OnInit{
   issues: Issue[] = []
   showReportIssue = false;

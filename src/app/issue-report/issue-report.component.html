@@ -16,6 +16,10 @@
           <label>Low</label>
         </clr-radio-wrapper>
         <clr-radio-wrapper>
+          <input type="radio" value="medium" clrRadio formControlName="priority">
+          <label>Medium</label>
+        </clr-radio-wrapper>
+        <clr-radio-wrapper>
           <input type="radio" value="high" clrRadio formControlName="priority" />
           <label>High</label>
         </clr-radio-wrapper>
@@ -30,6 +34,6 @@
         </select>
         <clr-control-error>Type is required</clr-control-error>
     </clr-select-container>    
-  <button class="btn btn-primary" type="submit">Create</button>
+  <button class="btn btn-default" type="submit">Create</button>
   <button class="btn" type="button" (click)="formClose.emit()">Cancel</button>
 </form>

@@ -24,6 +24,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: issue-tracker/docs
+          folder: issue-tracker/dist
           branch: production
           token: ${{ secrets.issue_tracking_system_token }}

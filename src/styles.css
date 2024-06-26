@@ -8,7 +8,7 @@
 }
 
 :root {
-  --clr-font: 'Open Sans' sans-serif;
+  --clr-font: 'Open Sans', sans-serif;
 } 
 
 html * {

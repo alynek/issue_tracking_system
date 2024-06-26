@@ -1,21 +1,18 @@
-
-@font-face {
-  font-family: 'Kollektif';
-  src: url('/assets/fonts/Kollektif.ttf') format('truetype');
- 
-} 
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 :root {
-  --clr-font: 'Kollektif';
-}
-
-body, * {
-  font-family: 'Kollektif' !important;
-}
+  --clr-font: 'Open Sans' sans-serif;
+} 
 
 html * {
   font-size: 17px;
-  font-weight: lighter;
 }
 
 

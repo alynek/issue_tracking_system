@@ -18,12 +18,12 @@ jobs:
           node-version: 20
 
       - name: Build Angular app to prod
-        working-directory: issue_tracking_system
+        working-directory: issue-tracker
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
         uses: alynek/github-pages-deploy-action@v4
         with:
-          folder: github-option-three-app/docs
+          folder: issue-tracker/docs
           branch: production
           token: ${{ secrets.issue_tracking_system_token }}

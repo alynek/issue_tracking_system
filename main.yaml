@@ -22,7 +22,7 @@ jobs:
         run: npm install && npm run build:prod
 
       - name: Deploy to GitHub Pages
-        uses: alynek/github-pages-deploy-action@v4
+        uses: alynek/issue_tracking_system
         with:
           folder: issue-tracker/docs
           branch: production

@@ -22,13 +22,14 @@
     "@cds/core": "^6.4.3",
     "@clr/angular": "^15.5.0",
     "@clr/ui": "^15.5.0",
+    "@angular/cdk": "^16.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.4",
-    "@angular/cli": "~16.0.4",
+    "@angular/cli": "^16.2.14",
     "@angular/compiler-cli": "^16.0.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.6.0",

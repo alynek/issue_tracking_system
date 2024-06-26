@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IssueListComponent } from './issue-list/issue-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IssueReportComponent } from './issue-report/issue-report.component';
+import { IssueResolvedComponent } from './issue-resolved/issue-resolved.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IssueListComponent,
-    IssueReportComponent
+    IssueReportComponent,
+    IssueResolvedComponent
   ],
   imports: [
     BrowserModule,

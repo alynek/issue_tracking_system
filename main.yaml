@@ -1,0 +1,29 @@
+name: Issue Tracking System
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Build Angular app to prod
+        working-directory: issue_tracking_system
+        run: npm install && npm run build:prod
+
+      - name: Deploy to GitHub Pages
+        uses: alynek/github-pages-deploy-action@v4
+        with:
+          folder: github-option-three-app/docs
+          branch: production
+          token: ${{ secrets.issue_tracking_system_token }}
